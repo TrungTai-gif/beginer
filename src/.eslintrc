@@ -1,0 +1,23 @@
+{
+  "extends": ["react-app", "prettier"], // Kế thừa cấu hình của React App và Prettier
+
+  "plugins": ["react", "prettier"], // Sử dụng plugin React và Prettier
+
+  "rules": {
+    "prettier/prettier": [
+      // Tạo rule để ESLint kiểm tra code theo Prettier
+      "warn", // Nếu code không đúng format → cảnh báo (warning)
+      {
+        "arrowParens": "always", // Luôn có () khi viết arrow function
+        "semi": false, // Không thêm dấu ; cuối câu
+        "trailingComma": "none", // Không thêm dấu , ở phần tử cuối
+        "tabWidth": 2, // Mỗi cấp indent = 2 khoảng trắng
+        "endOfLine": "auto", // Tự động xử lý kiểu xuống dòng (LF/CRLF)
+        "useTabs": false, // Không dùng Tab, dùng Space để indent
+        "singleQuote": true, // Dùng ' ' thay cho " "
+        "printWidth": 120, // Độ dài dòng mong muốn khoảng 120 ký tự
+        "jsxSingleQuote": true // JSX dùng ' ' cho attribute
+      }
+    ]
+  }
+}
